@@ -1,0 +1,16 @@
+#header {
+    grid-column: 1/13;
+    grid-row: 1/2;
+    align-self: center;
+    // padding: 1rem;
+    animation: fade_in_left 1.8s;
+}
+
+#title {
+    font-size: $h1;
+    font-weight: $w1;
+    text-align: center;
+    color: $color-primary;
+    text-transform: uppercase;
+    text-shadow: $text-shadow-1;
+}

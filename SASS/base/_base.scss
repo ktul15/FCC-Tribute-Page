@@ -1,0 +1,61 @@
+/*SASS VARIABLES*/
+
+//color variables:
+$color-primary:#2F8EED;
+//heading variables
+$h1: 6rem;
+$w1: 700;
+$h3: 1.5rem;
+$w3: 400;
+//font style variables
+$font-primary: Roboto;
+//shadow variables
+$text-shadow-1: .5rem .5rem .5rem #ccc;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //10px/16px = 62.5 --> 10px = 1rem;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 20vh 80vh min-content 100vh;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+hr.style-seven {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    justify-self: center;
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    width: 90%;
+    border-style: solid;
+    border-color: $color-primary;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr.style-seven:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: $color-primary;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}

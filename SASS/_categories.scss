@@ -1,0 +1,72 @@
+.intro {
+    // margin-top: 2rem;
+    padding: 1rem 2rem;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    @include section-grid;
+    &__text {
+        grid-column: 2/8;
+        padding: 1rem;
+        @include text-flex;
+        @include list-style;
+    }
+    &__img-div {
+        grid-column: 9/12;
+        // align-self: center;
+        height: 35rem;
+        width: 35rem;
+        position: relative;
+        animation: fade_in_right 1.8s;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        #img-caption {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            width: 100%;
+            color: $color-primary;
+            background-color: rgba(0, 0, 0, .5);
+            position: absolute;
+            bottom: 0rem;
+            padding: 2rem;
+            display: none;
+            transition: all 2s;
+        }
+        &:hover #img-caption {
+            display: block;
+        }
+    }
+}
+
+.early-life {
+    padding: 2rem;
+    height: 100vh;
+    // margin-top: 2rem;
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    @include section-grid;
+    &__quote {
+        grid-column: 2/5;
+    }
+    &__image {}
+    &__text {
+        grid-column: 6/12;
+    }
+    &__heading {
+        padding: 2rem;
+        padding-top: 0;
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: 400;
+        color: $color-primary;
+        text-align: center;
+        animation: fade_in_right 1.8s;
+    }
+    &__list {
+        @include text-flex;
+        @include list-style;
+    }
+}

@@ -1,0 +1,167 @@
+/*SASS VARIABLES*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: Roboto; }
+
+#main {
+  display: grid;
+  grid-template-rows: 20vh 80vh min-content 100vh;
+  grid-template-columns: repeat(12, 1fr); }
+
+hr.style-seven {
+  grid-row: 3/4;
+  grid-column: 1/-1;
+  justify-self: center;
+  overflow: visible;
+  /* For IE */
+  height: 30px;
+  width: 90%;
+  border-style: solid;
+  border-color: #2F8EED;
+  border-width: 1px 0 0 0;
+  border-radius: 20px; }
+
+hr.style-seven:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #2F8EED;
+  border-width: 0 0 1px 0;
+  border-radius: 20px; }
+
+.cp {
+  color: #2F8EED;
+  font-weight: 700; }
+
+#header {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  align-self: center;
+  animation: fade_in_left 1.8s; }
+
+#title {
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2F8EED;
+  text-transform: uppercase;
+  text-shadow: 0.5rem 0.5rem 0.5rem #ccc; }
+
+.intro {
+  padding: 1rem 2rem;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr repeat(10, 1fr) 1fr;
+  align-items: center; }
+  .intro__text {
+    grid-column: 2/8;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    animation: fade_in_up-1 1.8s; }
+    .intro__text li {
+      font-size: 1.5rem;
+      font-weight: 400; }
+      .intro__text li:not(:last-child) {
+        margin-bottom: 1rem; }
+      .intro__text li span {
+        color: #2F8EED; }
+  .intro__img-div {
+    grid-column: 9/12;
+    height: 35rem;
+    width: 35rem;
+    position: relative;
+    animation: fade_in_right 1.8s; }
+    .intro__img-div img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    .intro__img-div #img-caption {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      width: 100%;
+      color: #2F8EED;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      bottom: 0rem;
+      padding: 2rem;
+      display: none;
+      transition: all 2s; }
+    .intro__img-div:hover #img-caption {
+      display: block; }
+
+.early-life {
+  padding: 2rem;
+  height: 100vh;
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 1fr repeat(10, 1fr) 1fr;
+  align-items: center; }
+  .early-life__quote {
+    grid-column: 2/5; }
+  .early-life__text {
+    grid-column: 6/12; }
+  .early-life__heading {
+    padding: 2rem;
+    padding-top: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #2F8EED;
+    text-align: center;
+    animation: fade_in_right 1.8s; }
+  .early-life__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    animation: fade_in_up-1 1.8s; }
+    .early-life__list li {
+      font-size: 1.5rem;
+      font-weight: 400; }
+      .early-life__list li:not(:last-child) {
+        margin-bottom: 1rem; }
+      .early-life__list li span {
+        color: #2F8EED; }
+
+@keyframes fade_in_left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0%);
+    opacity: 1; } }
+
+@keyframes fade_in_right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0%);
+    opacity: 1; } }
+
+@keyframes fade_in_up-1 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0%);
+    opacity: 1; } }

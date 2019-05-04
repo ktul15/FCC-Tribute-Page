@@ -1,0 +1,96 @@
+//HEADER ANIMATIONS
+@keyframes fade_in_left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+//INTRO ANIMATIONS
+@keyframes fade_in_right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+//list items animations
+@keyframes fade_in_up-1 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+// @keyframes fade_in_up-2 {
+//     0% {
+//         transform: translateY(110%);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateY(0%);
+//         opacity: 1;
+//     }
+// }
+// @keyframes fade_in_up-3 {
+//     0% {
+//         transform: translateY(120%);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateY(0%);
+//         opacity: 1;
+//     }
+// }
+// @keyframes fade_in_up-4 {
+//     0% {
+//         transform: translateY(130%);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateY(0%);
+//         opacity: 1;
+//     }
+// }
+// @keyframes fade_in_up-5 {
+//     0% {
+//         transform: translateY(140%);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateY(0%);
+//         opacity: 1;
+//     }
+// }
+// @keyframes fade_in_up-6 {
+//     0% {
+//         transform: translateY(150%);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateY(0%);
+//         opacity: 1;
+//     }
+// }
+// @keyframes fade_in_up-7 {
+//     0% {
+//         transform: translateY(160%);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateY(0%);
+//         opacity: 1;
+//     }
+// }
