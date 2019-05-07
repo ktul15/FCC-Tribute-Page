@@ -2,3 +2,53 @@
     color: $color-primary;
     font-weight: 700;
 }
+
+.section-padding {
+    padding: 2rem;
+}
+
+.mg-tp-sm {
+    margin-top: 2rem;
+}
+
+.gc-2-8 {
+    grid-column: 2/8;
+}
+
+.gc-9-12 {
+    grid-column: 9/12;
+}
+
+.gc-2-5 {
+    grid-column: 2/5;
+}
+
+.gc-6-12 {
+    grid-column: 6/12;
+}
+
+.gc-4-12 {
+    grid-column: 4/12;
+}
+
+.gc-2-10 {
+    grid-column: 2/10;
+}
+
+.gc-8-12 {
+    grid-column: 8/12;
+}
+
+.gc-2-12 {
+    grid-column: 2/12;
+}
+
+.text-list {
+    @include text-flex;
+    @include list-style;
+}
+
+.text {
+    display: grid;
+    grid-row-gap: 3rem;
+}

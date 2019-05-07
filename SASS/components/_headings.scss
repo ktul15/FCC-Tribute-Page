@@ -1,0 +1,17 @@
+.heading-2 {
+    padding: 2rem;
+    padding-top: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 300;
+    color: $color-primary;
+    text-align: center;
+    animation: fade_in_right 1.8s;
+}
+
+.heading-3 {
+    // text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-primary;
+}

@@ -1,17 +1,10 @@
 .intro {
-    // margin-top: 2rem;
-    padding: 1rem 2rem;
-    grid-column: 1/-1;
-    grid-row: 2/3;
-    @include section-grid;
     &__text {
-        grid-column: 2/8;
         padding: 1rem;
         @include text-flex;
         @include list-style;
     }
     &__img-div {
-        grid-column: 9/12;
         // align-self: center;
         height: 35rem;
         width: 35rem;
@@ -42,31 +35,97 @@
 }
 
 .early-life {
-    padding: 2rem;
-    height: 100vh;
-    // margin-top: 2rem;
-    grid-column: 1/-1;
-    grid-row: 4/5;
-    @include section-grid;
-    &__quote {
-        grid-column: 2/5;
+    .quote {
+        .image {}
     }
-    &__image {}
-    &__text {
-        grid-column: 6/12;
+    .text {}
+    .text-list {}
+}
+
+.education {
+    .quote {
+        .image {}
+    }
+    .text {}
+    .text-list {}
+}
+
+.untouchability {
+    .quote {
+        .image {}
+    }
+    .text {}
+    .text-list {}
+}
+
+.poona {
+    .quote {
+        .image {}
+    }
+    .text {}
+    .text-list {}
+}
+
+.aryan {
+    .quote {
+        .image {}
+    }
+    .text {}
+    .text-list {}
+}
+
+.political {
+    .quote {
+        .image {}
+    }
+    .text {}
+    .text-list {}
+}
+
+.footer {
+    grid-column: 1/-1;
+    padding: 2rem;
+    background-color: $color-primary;
+    @include section-grid;
+    &__wiki-link {
+        grid-column: 2/5;
+        display: inline-block;
+        padding: 1rem;
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: white;
+        color: $color-primary;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        cursor: pointer;
+    }
+    &__external {
+        grid-column: 8/12;
+        background-color: white;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1rem;
     }
     &__heading {
-        padding: 2rem;
-        padding-top: 0;
-        text-transform: uppercase;
-        font-size: 4rem;
-        font-weight: 400;
         color: $color-primary;
-        text-align: center;
-        animation: fade_in_right 1.8s;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1.2rem;
     }
     &__list {
-        @include text-flex;
-        @include list-style;
+        list-style: none;
+        display: grid;
+        grid-row-gap: 1rem;
+    }
+    &__link {
+        color: $color-primary;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 300;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

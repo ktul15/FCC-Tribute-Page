@@ -5,6 +5,8 @@ $color-primary:#2F8EED;
 //heading variables
 $h1: 6rem;
 $w1: 700;
+$h2:4rem;
+$w2: 400;
 $h3: 1.5rem;
 $w3: 400;
 //font style variables
@@ -30,12 +32,12 @@ body {
 
 #main {
     display: grid;
-    grid-template-rows: 20vh 80vh min-content 100vh;
+    grid-template-rows: 20vh 80vh 2vh min-content;
     grid-template-columns: repeat(12, 1fr);
 }
 
 hr.style-seven {
-    grid-row: 3/4;
+    // grid-row: 3/4;
     grid-column: 1/-1;
     justify-self: center;
     overflow: visible;

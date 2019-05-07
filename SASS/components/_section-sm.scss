@@ -1,0 +1,5 @@
+.section-sm {
+    grid-column: 1/-1;
+    // grid-row: 4/5;
+    @include section-grid;
+}
