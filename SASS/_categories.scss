@@ -82,6 +82,16 @@
     .text-list {}
 }
 
+.books {
+    .quote {
+        grid-column: 3/5;
+        .image {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
 .footer {
     grid-column: 1/-1;
     padding: 2rem;

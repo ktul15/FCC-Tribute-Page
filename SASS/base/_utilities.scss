@@ -43,6 +43,10 @@
     grid-column: 2/12;
 }
 
+.gc-2-4 {
+    grid-column: 2/4;
+}
+
 .text-list {
     @include text-flex;
     @include list-style;

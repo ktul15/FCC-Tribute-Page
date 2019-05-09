@@ -24,3 +24,7 @@
         }
     }
 }
+
+@mixin width($width) {
+    width: $width;
+}

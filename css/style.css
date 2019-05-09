@@ -75,6 +75,9 @@ hr.style-seven:before {
 .gc-2-12 {
   grid-column: 2/12; }
 
+.gc-2-4 {
+  grid-column: 2/4; }
+
 .text-list {
   display: flex;
   flex-direction: column;
@@ -145,6 +148,12 @@ hr.style-seven:before {
     transition: all 2s; }
   .intro__img-div:hover #img-caption {
     display: block; }
+
+.books .quote {
+  grid-column: 3/5; }
+  .books .quote .image {
+    height: 100%;
+    width: 100%; }
 
 .footer {
   grid-column: 1/-1;
@@ -238,3 +247,14 @@ hr.style-seven:before {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: justify; }
+
+.figure {
+  width: 30rem;
+  align-self: center;
+  border: 1px solid #2F8EED;
+  object-fit: cover; }
+  .figure__img {
+    width: 100%; }
+  .figure__caption {
+    font-size: 1.3rem;
+    text-align: center; }
