@@ -163,7 +163,6 @@ hr.style-seven:before {
   grid-template-columns: repeat(12, 1fr);
   align-items: center; }
   .footer__wiki-link {
-    grid-column: 2/5;
     display: inline-block;
     padding: 1rem;
     border-radius: 10px;
@@ -185,7 +184,8 @@ hr.style-seven:before {
     color: #2F8EED;
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1.2rem;
+    cursor: pointer; }
   .footer__list {
     list-style: none;
     display: grid;
@@ -194,9 +194,19 @@ hr.style-seven:before {
     color: #2F8EED;
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 300; }
+    font-weight: 300;
+    cursor: pointer; }
     .footer__link:hover {
       text-decoration: underline; }
+  .footer__paragraph {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: white;
+    color: #2F8EED;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400; }
 
 @keyframes fade_in_left {
   0% {
@@ -242,6 +252,29 @@ hr.style-seven:before {
   font-size: 2rem;
   font-weight: 700;
   color: #2F8EED; }
+
+.quote {
+  position: relative;
+  padding: 1rem 2rem; }
+  .quote__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .quote__text {
+    font-size: 1.7rem;
+    font-style: italic;
+    color: #111111;
+    text-indent: 40px;
+    text-align: justify; }
+  .quote__quotation {
+    position: absolute;
+    font-size: 70px;
+    top: -30px;
+    left: -10px;
+    opacity: 1;
+    color: #2F8EED; }
 
 .paragraph {
   font-size: 1.5rem;

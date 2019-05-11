@@ -1,4 +1,26 @@
 .quote {
-    // height: 25em;
-    // width: 20rem;
+    position: relative;
+    padding: 1rem 2rem;
+    &__container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    &__text {
+        font-size: 1.7rem;
+        font-style: italic;
+        color: rgb(17, 17, 17);
+        text-indent: 40px;
+        text-align: justify;
+    }
+    &__quotation {
+        position: absolute;
+        font-size: 70px;
+        top: -30px;
+        left: -10px;
+        opacity: 1;
+        color: $color-primary;
+    }
 }
